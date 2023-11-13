@@ -1,0 +1,31 @@
+main{   
+    width: 650px;
+    margin: auto;
+}
+.dashed-line{
+    border: 7px dashed black;
+    margin: 20px;
+    width: 21x;
+}
+  .style2 {
+    width: 70%; 
+    padding: 1%;
+    background-color: #40b6fa;
+    vertical-align: baseline;
+}
+  .style1 {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+  th, td {
+    padding: 0px;
+  }
+
+  .table-header{
+    margin-top: 50px;
+  }
+  
