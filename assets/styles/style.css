@@ -30,4 +30,8 @@ main{
   }
   .garis_tepi1 {
     border: 2px solid black;
-  }  
+  }
+
+  .sample-nth tr:nth-child(even) {
+    background-color: #AFEEEE;
+  }
