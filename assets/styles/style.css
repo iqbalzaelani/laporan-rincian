@@ -7,18 +7,18 @@ main{
     margin: 20px;
     width: 21x;
 }
+.style3 {
+  border: 2px black;
+  border-top-style: solid;
+}
   .style2 {
-    width: 70%; 
-    padding: 1%;
-    background-color: #40b6fa;
-    vertical-align: baseline;
+    border: 2px black;
+    border-bottom-style: solid;
 }
   .style1 {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    text-align: center;
+    border: 2px black;
+    border-top-style: solid;
+    border-bottom-style: solid;
 }
 
   th, td {
@@ -28,4 +28,6 @@ main{
   .table-header{
     margin-top: 50px;
   }
-  
+  .garis_tepi1 {
+    border: 2px solid black;
+  }  
