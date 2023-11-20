@@ -6,14 +6,37 @@
     <title>Laporan Rincian</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
 </head>
+
 <style>
     .bg-black{
         background-color: black;
     }
+    @media print {
+            body * {
+                visibility: hidden;
+            }
+            #print-content, #print-content * {
+                visibility: visible;
+            }
+            #print-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
 </style>
 
+<div class="grid-container2">
+    <div class="item1">
+        <img src="assets/image/buttonprint.svg" width="50px" id="printButton" onClick="printContent()">    
+        </div>
+</div>
+
 <body>
-    <section>
+<div class="grid-container">
+    <div>
+<div id="print-content">
+    <table>
         <table width="100%" heigt="100%">
             <tr>
                 <td align="center">
@@ -2775,7 +2798,7 @@
             </table>
             <table width="100%" heigt="100%" class="sample-nth">
                 <thead>
-                    <tr>
+                    <tr>5
                         <td align="left" class="style1">
                             <span><strong>NO</strong></span>
                         </th>
@@ -3099,6 +3122,24 @@
         <div class="tabel-content">
             <table width="100%"></table>
         </div>
-    </section>
+    </table>
+</div> 
+    </div> 
+    <script>
+        function printContent() {
+            printWindow.document.write('<html><head><title>Cetak Konten</title>');
+            printWindow.document.write('<link rel="stylesheet" href="assets/styles/style.css" />');
+            printWindow.document.write('</head><body>');
+            printWindow.document.write(document.getElementById('print-content').innerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+        document.getElementById("printButton").addEventListener("click", function() {
+        window.print();
+    });
+
+    </script>
+
 </body>
 </html>
